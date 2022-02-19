@@ -41,6 +41,8 @@ dependencies:
   fl_chart: ^0.36.1
   data_table_2: ^2.0.3
   get: ^4.6.1
+  fluent_ui: ^3.9.0
+  multi_select_flutter: ^4.0.0
   
 
 dev_dependencies:

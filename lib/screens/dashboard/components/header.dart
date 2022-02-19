@@ -9,7 +9,9 @@ import '../../../controllers/menu_controller.dart';
 class Header extends StatelessWidget {
   const Header({
     Key? key,
+    this.header,
   }) : super(key: key);
+  final String? header;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,7 @@ class Header extends StatelessWidget {
           ),
         if (!Responsive.isMobile(context))
           Text(
-            "Dashboard",
+            header ?? 'Dashboard',
             style: Theme.of(context).textTheme.headline6,
           ),
         if (!Responsive.isMobile(context))

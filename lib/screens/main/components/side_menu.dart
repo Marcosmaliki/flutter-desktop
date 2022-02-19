@@ -20,12 +20,14 @@ class SideMenu extends StatelessWidget {
           DrawerListTile(
             title: "Dashboard",
             svgSrc: "assets/icons/menu_dashbord.svg",
-            press: () => Get.off(() => const MainScreen()),
+            press: () => Get.off(() => const MainScreen(),
+                transition: Transition.fadeIn),
           ),
           DrawerListTile(
             title: "Leads",
             svgSrc: "assets/icons/menu_tran.svg",
-            press: () => Get.off(() => const LeadsHome()),
+            press: () =>
+                Get.off(() => const LeadsHome(), transition: Transition.fadeIn),
           ),
           DrawerListTile(
             title: "PruMobi Usage",
